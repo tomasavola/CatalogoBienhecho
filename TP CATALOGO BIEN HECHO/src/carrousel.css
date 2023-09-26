@@ -1,0 +1,17 @@
+.carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .carousel-container {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  img {
+    width: 100%;
+    max-width: 600px;
+    transition: transform 0.5s ease-in-out;
+  }
+  
