@@ -8,9 +8,11 @@ import Product from "./pages/Product.js";
 import CategoriesProvider from "./context/CategoriesContext.js";
 import ProductsProvider from "./context/ProductsContext.js";
 
+
 export default function App() {
   return (
     <CategoriesProvider>
+      
       <ProductsProvider>
         <BrowserRouter>
           <Routes>

@@ -4,7 +4,7 @@ import "../carrousel.css";
 export default function Carousel() {
   const [slideIndex, setSlideIndex] = useState(0);
 
-  const images = ["imagen1.jpg", "imagen2.jpg", "imagen3.jpg"];
+  const images = ["imagen1.png", "imagen2.jpg", "imagen3.jpg"];
 
   const showSlide = (index) => {
     if (index >= images.length) {
