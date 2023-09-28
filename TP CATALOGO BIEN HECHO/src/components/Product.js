@@ -15,7 +15,8 @@ export default function Product({ producto, url, showProductDetail }) {
       ) : (
         <></>
       )}
-      <button className="btn">VER MAS</button>
+      <button className="btn">Más info</button>
+      
     </Link>
   );
 }
