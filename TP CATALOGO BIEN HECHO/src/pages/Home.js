@@ -5,6 +5,7 @@ import myImage from "../images/logo.png";
 import '../styles.css'
 import imagen1 from "../images/imagen1.png";
 import imagen2 from "../images/imagen2.png";
+import imagen3 from "../images/imagen3.png";
 import SimpleImageSlider from "react-simple-image-slider";
 
 export default function Home() {
@@ -17,6 +18,9 @@ export default function Home() {
     {
       url: imagen2,
     },
+    {
+      url: imagen3,
+    },
   ]
 
   return (
@@ -24,12 +28,13 @@ export default function Home() {
       <main>
       <div className='slider-container'>
             <SimpleImageSlider
-              width={'40%'}
+              width={'60%'}
               height={500}
               images={sliderData}
               showBullets={true}
               showNavs={true}
-              autoPlay={true}
+              autoPlay={false}
+              
             />
       </div>
         <center>

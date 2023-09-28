@@ -5,7 +5,7 @@ import "../styles.css";
 export default function Header() {
   return (
     <header>
-      <h3>Indumentaria Tullioenbek</h3>
+      <h3>Tullionbek store</h3>
       <nav class="arreglarHeader">
         <ul>
           <li>
