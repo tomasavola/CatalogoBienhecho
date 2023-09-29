@@ -173,7 +173,7 @@ main {
   background-color: #fff;
   border: 1px solid #ddd;
   padding: 1rem 1rem 3rem 1rem;
-  width: 30%;
+  width: 50%;
   /* max-width: 40vw; */
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -293,57 +293,9 @@ footer {
   }
 }
 
-.carousel {
-  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
-  position: relative;
-  overflow: hidden;
-  margin: 2rem 0;
-  padding: 0;
-}
 
-.carousel-inner {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
 
-.carousel-slide {
-  flex: 0 0 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.carousel img {
-  max-width: 100%;
-  height: auto;
-}
-
-.carousel-prev,
-.carousel-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: none;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-  padding: 0.5rem;
-  color: #333;
-  transition: color 0.3s;
-}
-
-.carousel-prev:hover,
-.carousel-next:hover {
-  color: rgb(245, 181, 53);
-}
-
-.carousel-prev {
-  left: 0;
-}
-
-.carousel-next {
-  right: 0;
-}
 
 .search-filter {
   display: flex;
