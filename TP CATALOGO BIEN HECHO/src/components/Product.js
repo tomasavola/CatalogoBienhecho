@@ -8,9 +8,9 @@ export default function Product({ producto, url, showProductDetail }) {
       <img src={producto.images[0]} alt={producto.id} />
       {showProductDetail === true ? (
         <>
-          <h3 className="product-title">{producto.title.toUpperCase()}</h3>
+          <h3 className="product-title">{producto.title()}</h3>
           <p className="product-price">${producto.price}</p>
-          <h4>{producto.title.toUpperCase()}</h4>
+          <h4>{producto.title()}</h4>
         </>
       ) : (
         <></>
