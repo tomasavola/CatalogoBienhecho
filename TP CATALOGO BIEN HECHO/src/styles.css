@@ -114,7 +114,7 @@ main {
 
 .img-product {
   width: 20%;
-  height: 100px;
+  height: 80px;
 }
 
 .product-list {
@@ -169,6 +169,31 @@ main {
   transition: background-color 0.3s;
 }
 
+
+/* CSS */
+.button-33 {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: rgb(8, 99, 8);
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-33:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
 .product {
   background-color: #fff;
   border: 1px solid #ddd;
@@ -189,22 +214,20 @@ main {
 }
 
 .product:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 11px rgb(245, 181, 53, 0.4);
+  transform: translateY(-11px);
 }
 
 .product-title {
-  margin-top: 40px;
   font-size: 1.8rem;
   color: black;
-  font-weight: bold;
+  font-family: arial;
   text-decoration: none;
 }
 
 .product img {
-  object-fit: cover;
-  width: 300px;
-  height: 500px;
+  object-fit: contain;
+  width: 250px;
+  height: 450px;
   margin-top: 20px;
 }
 
@@ -212,13 +235,9 @@ main {
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
-  color: #ffa500;
+  color: #2e8347;
 }
 
-.product:hover > .btn{
-  opacity: 1;
-  transition: 500ms ease;
-}
 
 .product img {
   max-width: 100%;
@@ -344,9 +363,8 @@ footer {
 }
 
 .product-image img {
-  width: 500px;
-  height: 600px;
-  object-fit: cover;
+  width: 100px;
+  height: 100px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }

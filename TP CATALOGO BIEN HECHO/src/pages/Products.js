@@ -31,12 +31,8 @@ export default function Products() {
     });
   };
 
-  if(products === undefined || products === null){
-    return(
-      <div>Loading...</div>
-    )
-  }
-  else{
+ 
+  
     return (
       <main>
         <Search handleInput={handleInput} handleFilter={handleFilter}/>
@@ -48,4 +44,4 @@ export default function Products() {
       </main>
     );
   }
-}
+

@@ -2,22 +2,18 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
-export default function Product({ producto, url, showProductDetail }) {
+export default function Product({ producto, url }) {
   return (
-    <Link key={producto.id} className="product" to={url}>
+    <div key={producto.id} className="product" >
       <img src={producto.images[0]} alt={producto.id} />
-      {showProductDetail === true ? (
-        <>
-          <h3 className="product-title">{producto.title()}</h3>
-          <p className="product-price">${producto.price}</p>
-          <h4>{producto.title()}</h4>
-        </>
-      ) : (
-        <></>
-      )}
-      <button className="btn">Más info</button>
       
-    </Link>
+        <>
+          <h3 className="product-title">{producto.title}</h3>
+          <p className="product-price">${producto.price}</p>
+          <Link to={url}><button class="button-33" >Más info</button></Link>
+        </>
+      
+    </div>
   );
 }
 

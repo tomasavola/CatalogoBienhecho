@@ -24,11 +24,7 @@ export default function Product() {
     loadProduct();  
   }, [productId]);
 
-  if(producto === {} || producto === undefined || producto === null || producto.images === undefined || producto.images === null){
-    return(
-        <><div>Loading...</div></>
-    )
-  }else {
+ 
     return (
       <main>    
         <section className="product-detail">
@@ -42,7 +38,7 @@ export default function Product() {
           </div>
           <div className="product-info">
             <h1 className="product-name">{producto.title}</h1>
-            <p className="product-detail-price">${producto.price}</p>
+            <p className="product-price">${producto.price}</p>
             <p className="product-description">
               {producto.description}
             </p>            
@@ -53,4 +49,4 @@ export default function Product() {
     )
   }
 
-}
+
