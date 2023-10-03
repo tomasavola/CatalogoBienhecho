@@ -7,8 +7,8 @@ export default function Header() {
     <header>
       <h3>Tullionbek store</h3>
       <nav class="arreglarHeader">
-        <ul>
-          <li>
+      <ul className="nav-links">
+      <li>
             <Link to="/">Home</Link>
           </li>
           <li>
@@ -17,7 +17,7 @@ export default function Header() {
           <li>
             <Link to="/contact">Contact</Link>
           </li>
-        </ul>
+      </ul>
       </nav>
       <div className="user-icons">
         <a href="#">

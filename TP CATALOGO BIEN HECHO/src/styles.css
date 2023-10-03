@@ -4,6 +4,7 @@ h1,
 h2,
 p,
 ul,
+
 li {
   margin: 0;
   padding: 0;
@@ -13,6 +14,23 @@ li {
 .arreglarHeader
 {
   background-color: #F0F0F0;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center; /* Centrar horizontalmente los enlaces */
+}
+
+.nav-links li {
+  margin: 0 10px; /* Espacio entre los elementos de la lista (ajusta según lo necesites) */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
 }
 
 body {
@@ -188,6 +206,7 @@ main {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  
 }
 
 .button-33:hover {
