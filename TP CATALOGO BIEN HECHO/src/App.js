@@ -7,27 +7,25 @@ import Contact from "./pages/Contact.js";
 import Product from "./pages/Product.js";
 import CategoriesProvider from "./context/CategoriesContext.js";
 import ProductsProvider from "./context/ProductsContext.js";
-
+import { CartProvider } from "./context/CartContext"; // Cambio aquí
 
 export default function App() {
   return (
     <CategoriesProvider>
-      
       <ProductsProvider>
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Layout />}>
-              <Route index element={<Home />}></Route>
-              <Route
-                path="/products"
-                element={<Products />}
-              ></Route>
-              <Route path="/products/:productId" element={<Product />}></Route>
-              <Route path="/contact" element={<Contact />}></Route>
-              <Route path="*" element={<h1>404</h1>}></Route>
-            </Route>
-          </Routes>
-        </BrowserRouter>
+        <CartProvider>
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<Layout />}>
+                <Route index element={<Home />}></Route>
+                <Route path="/products" element={<Products />}></Route>
+                <Route path="/products/:productId" element={<Product />}></Route>
+                <Route path="/contact" element={<Contact />}></Route>
+                <Route path="*" element={<h1>404</h1>}></Route>
+              </Route>
+            </Routes>
+          </BrowserRouter>
+        </CartProvider>
       </ProductsProvider>
     </CategoriesProvider>
   );
