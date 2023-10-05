@@ -27,9 +27,7 @@ export default function Product({ producto, url }) {
         <h3 className="product-title">{producto.title}</h3>
         <p className="product-price">${producto.price}</p>
         <Link to={url}><button className="button-33">Más info</button></Link>
-        <button onClick={addToCart}>Agregar al carrito</button>
       </>
-      {showCart && <Cart />} {/* Muestra el carrito si showCart es true */}
     </div>
   );
 }
