@@ -3,3 +3,36 @@
     width: 150px;
     height: 100px;
 }
+
+.remove-button {
+    background-color: transparent; /* Fondo transparente */
+    color: red; /* Color de la cruz */
+    border: none;
+    padding: 0; /* Sin espacio adicional alrededor de la cruz */
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+  
+  .remove-button:hover {
+    color: darkred; /* Cambiar el color al pasar el ratón sobre la cruz */
+  }
+
+  .increment-button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+  
+  .increment-button:hover {
+    background-color: darkgreen;
+  }
+  
+  .quantity {
+    display: flex;
+    align-items: center;
+  }
+  

@@ -44,10 +44,11 @@ export default function ProductDetail() {
           <h1 className="product-name">{producto.title}</h1>
           <p className="product-price">${producto.price}</p>
           <p className="product-description">{producto.description}</p>
-          <button className="btnAddToCart" onClick={addToCart}>
-            ADD TO CART
-          </button>
-          <Link to="/cart">Go to Cart</Link>
+          <Link to="/cart">
+            <button className="btnAddToCart" onClick={addToCart}>
+              ADD TO CART
+            </button>
+          </Link>
         </div>
       </section>
     </main>
