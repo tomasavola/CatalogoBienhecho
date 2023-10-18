@@ -1,37 +1,27 @@
 import React from "react";
-import { useCart } from '../context/CartContext';
-import "../cart.css";
+import { useContext } from "react";
+import { CartContext } from "../context/CartContext";
+import CartProduct from "../components/CartProduct";
 
-const Cart = () => {
-  const { cartState, dispatch } = useCart();
-
-  const removeFromCart = (item) => {
-    dispatch({ type: 'REMOVE_FROM_CART', payload: item });
-  };
-
-  const incrementQuantity = (item) => {
-    dispatch({ type: 'ADD_TO_CART', payload: item });
-  };
+export default function Cart() {
+  let { products, totalPrice, clearProducts } = useContext(CartContext);
 
   return (
-    <div style={{ display: cartState.cartItems.length > 0 ? 'block' : 'none' }}>
-      <h2>Tu carrito</h2>
-      <ul>
-        {cartState.cartItems.map(item => (
-          <li key={item.id}>
-            <img className="imagen" src={item.images[0]} alt={item.title} />
-            <span>{item.title}</span>
-            <span>${item.price}</span>
-            <button className="remove-button" onClick={() => removeFromCart(item)}>❌</button>
-            <div className="quantity">
-              <button className="increment-button" onClick={() => incrementQuantity(item)}>+</button>
-              <span>{item.quantity}</span>
-            </div>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <>
+      <main>
+        <div className="checkoutContainer">
+          {products.map((product, id) => (
+            <CartProduct key={id} product={product} />
+          ))}
+          <div className="buttonCheckoutContainer">
+            <button onClick={() => clearProducts()} className="buttonCheckout">CHECKOUT</button>
+          </div>
+          <div className="totalPriceContainer">
+            <h1>TOTAL: </h1>
+            <h1 style={{ color: "rgb(245, 181, 53)" }}>${totalPrice}</h1>
+          </div>
+        </div>
+      </main>
+    </>
   );
-};
-
-export default Cart;
+}
