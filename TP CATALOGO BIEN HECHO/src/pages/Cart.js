@@ -14,7 +14,7 @@ export default function Cart() {
             <CartProduct key={id} product={product} />
           ))}
           <div className="buttonCheckoutContainer">
-            <button onClick={() => clearProducts()} className="buttonCheckout">CHECKOUT</button>
+            <button  onClick={() => clearProducts()} className="btnAddToCart">DELETE ALL</button>
           </div>
           <div className="totalPriceContainer">
             <h1>TOTAL: </h1>

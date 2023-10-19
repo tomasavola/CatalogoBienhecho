@@ -8,7 +8,8 @@ import Product from "./pages/Product.js";
 import Cart from "./pages/Cart.js";
 import CategoriesProvider from "./context/CategoriesContext.js";
 import ProductsProvider from "./context/ProductsContext.js";
-import { CartProvider } from "./context/CartContext.js"; // Cambio aquí
+import CartProvider from "./context/CartContext.js";
+
 
 export default function App() {
   return (

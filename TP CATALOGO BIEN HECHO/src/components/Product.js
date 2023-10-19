@@ -1,22 +1,14 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import { useCart } from '../context/CartContext';
 import Cart from '../components/Cart'; 
 import { useNavigate } from 'react-router-dom';
 
 export default function Product({ producto, url }) {
-  const { dispatch } = useCart();
   const [showCart, setShowCart] = useState(false);
   const navigate = useNavigate();
 
 
-  const addToCart = () => {
-    dispatch({ type: 'ADD_TO_CART', payload: producto });
-    setShowCart(true); // Muestra el carrito
-    navigate('/cart'); // Redirige al usuario a la pantalla del carrito
-  };
-  
   
 
   return (

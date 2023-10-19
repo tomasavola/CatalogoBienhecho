@@ -1,6 +1,7 @@
 import React, {useContext} from 'react'
-import deleteIcon from '../images/deleteIcon.png'
 import { CartContext } from '../context/CartContext'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 export default function CartProduct({ product }) {
 
@@ -14,8 +15,9 @@ export default function CartProduct({ product }) {
       </div>
       <img src={product.images[1]} className="logo" alt="" />
       <button onClick={() => deleteProduct(product)} className="deleteContainer">
-        <img src={deleteIcon} className="deleteIcon" alt="" />
-      </button>
+  <FontAwesomeIcon icon={faTimes} className="deleteIcon" />
+   </button>
+
     </div>
   )
 }
