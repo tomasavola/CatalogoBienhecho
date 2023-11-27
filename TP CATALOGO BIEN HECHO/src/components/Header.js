@@ -6,9 +6,9 @@ export default function Header() {
   return (
     <header>
       <h3>Tullionbek store</h3>
-      <nav class="arreglarHeader">
-      <ul className="nav-links">
-      <li>
+      <nav className="arreglarHeader">
+        <ul className="nav-links">
+          <li>
             <Link to="/">Home</Link>
           </li>
           <li>
@@ -17,18 +17,19 @@ export default function Header() {
           <li>
             <Link to="/contact">Contact</Link>
           </li>
-      </ul>
+        </ul>
       </nav>
       <div className="user-icons">
         <a href="#">
           <i style={{ color: "black" }} className="fas fa-user"></i>
         </a>
-        <a href="#">
+        {/* Enlace a la página del carrito */}
+        <Link to="/cart">
           <i
             style={{ color: "black" }}
             className="fas fa-shopping-cart"
           ></i>
-        </a>
+        </Link>
       </div>
     </header>
   );

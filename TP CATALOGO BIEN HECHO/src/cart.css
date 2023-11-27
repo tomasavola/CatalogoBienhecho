@@ -1,38 +1,47 @@
-.imagen
-{
-    width: 150px;
-    height: 100px;
+.checkoutContainer {
+  display: flex;
+  justify-content: space-between;
 }
 
-.remove-button {
-    background-color: transparent; /* Fondo transparente */
-    color: red; /* Color de la cruz */
-    border: none;
-    padding: 0; /* Sin espacio adicional alrededor de la cruz */
-    cursor: pointer;
-    font-size: 1.2rem;
-  }
-  
-  .remove-button:hover {
-    color: darkred; /* Cambiar el color al pasar el ratón sobre la cruz */
+.cartItemsContainer {
+  width: 70%;
+}
+
+.cartSummaryContainer {
+  width: 30%;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.totalPriceContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.btnAddToCart {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btnAddToCart:hover {
+  background-color: #2980b9;
+}
+
+@media (max-width: 768px) {
+  .checkoutContainer {
+    flex-direction: column;
   }
 
-  .increment-button {
-    background-color: green;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 1.2rem;
+  .cartSummaryContainer {
+    width: 100%;
+    margin-top: 20px;
   }
-  
-  .increment-button:hover {
-    background-color: darkgreen;
-  }
-  
-  .quantity {
-    display: flex;
-    align-items: center;
-  }
-  
+}
